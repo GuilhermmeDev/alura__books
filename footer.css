@@ -1,0 +1,70 @@
+.newslatter {
+    background-color: var(--branco);
+    padding: 1em;
+}
+.news__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul-texto);
+}
+
+.news__texto {
+    font-weight: 300;
+    color: var(--azul-texto);
+    margin: 1em 0;
+}
+
+#news__caixa {
+    display: block;
+    background-color: transparent;
+    color: var(--azul-texto);
+    border: 1px solid var(--azul-texto);
+    border-radius: 24px;
+    padding: 1em;
+    width: 80vw;
+    margin: auto;
+}
+
+#news__caixa::placeholder {
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul-texto);
+    background: url("../img/Email.svg") no-repeat;
+    padding: 0 2em;
+}
+
+
+@media screen and (min-width:1024px) {
+    .news__titulo {
+        font-size: 24px;
+    }
+
+    .newslatter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em;
+    }
+
+    #news__caixa {
+        width: 30%;
+    }
+
+    .news__texto {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .newslatter {
+        padding: 3em 30vw;
+    }
+
+    .news__titulo {
+        font-size: 24px;
+    }
+}
